@@ -302,7 +302,7 @@ body {
 }
 
 .radio-slide-title {
-  font-size: 18px;
+  /* font-size: 18px; */
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -386,7 +386,7 @@ body {
   } */
 
   .radio-slide-title {
-    font-size: 22px;
+    /* font-size: 22px; */
     margin-bottom: 5px;
   }
 
