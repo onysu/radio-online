@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      padding: 5px;
+      max-width: 550px;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: .1fr 1fr .1fr 1fr .1fr;
+      grid-template-areas:
+        "nav nav"
+        "tuner profil"
+        "tuner play"
+        "tuner info"
+        "footer footer";
+      gap: .2rem;
+    }
+
+    .nav {
+      /* border: 1px solid #aaa; */
+      grid-area: nav;
+    }
+
+    .tuner {
+      /* border: 1px solid #bbb; */
+      grid-area: tuner;
+      /* padding: 0 5px; */
+    }
+
+    .profil {
+      /* border: 1px solid #ccc; */
+      grid-area: profil;
+    }
+
+    .play {
+      /* border: 1px solid #ddd; */
+      grid-area: play;
+    }
+
+    .info {
+      /* border: 1px solid #999; */
+      grid-area: info;
+    }
+
+    .footer {
+      /* border: 1px solid #666; */
+      grid-area: footer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="nav">#RAdio<span style="font-weight: bold;">Online</span></div>
+
+    <div class="tuner">
+      <div class="radio-tuner">
+        <div class="tuner-dial"></div>
+        <ul class="radio-clients">
+          <li class="active">
+            <img src="http://jalinburton.com/portfolio/id-stronhold-logo-sm.png" alt="ID Stronghold" />
+          </li>
+          <li>
+            <img src="http://jalinburton.com/portfolio/bucca-di-beppo-logo-sm.png" alt="Bucca Di Beppo" />
+          </li>
+          <li>
+            <img src="http://jalinburton.com/portfolio/simple-mobile-logo-sm.png" alt="Simple Mobile" />
+          </li>
+          <li>
+            <img src="http://jalinburton.com/portfolio/chocolate-pen-logo-sm.png" alt="Chocolate Pen" />
+          </li>
+          <li>
+            <img src="http://jalinburton.com/portfolio/subway-logo-sm.png" alt="Subway" />
+          </li>
+          <li>
+            <img src="http://jalinburton.com/portfolio/toyota-logo-sm.png" alt="Courtesy Toyota" />
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="profil">
+      <div class="radio-slide-logo clip">
+        <div class="slide-wrap">
+          <ul>
+
+            <li class="slide-one active" data-audio-src="http://jalinburton.com/portfolio/ID-Stronghold.mp3"
+              data-title="ID Stronghold"
+              data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi mi enim, ultricies egestas tincidunt vitae, cursus in erat. Etiam id cursus dui. Curabitur congue."
+              data-link="#1">
+              <img src="http://jalinburton.com/portfolio/id-stronhold-logo-lg.png" />
+            </li>
+
+            <li class="slide-two" data-audio-src="http://jalinburton.com/portfolio/Buca-Di-Beppo.mp3"
+              data-title="Buca Di Beppo"
+              data-description="Neque porta suscipit interdum, libero odio consectetur purus, vehicula pretium nunc mauris ac neque. Pellentesque dapibus, enim quis cursus facilisis, tellus nisi ullamcorper odio."
+              data-link="#2">
+              <img src="http://jalinburton.com/portfolio/bucca-di-beppo-logo-lg.png" />
+            </li>
+
+            <li class="slide-three" data-audio-src="http://jalinburton.com/portfolio/Simple-Mobile.mp3"
+              data-title="Simple Mobile"
+              data-description="Vitae pulvinar metus nisl quis ex. Donec tempor quam non ligula sodales, vel porttitor mauris bibendum. Donec eget velit a diam congue commodo."
+              data-link="#3">
+              <img src="http://jalinburton.com/portfolio/simple-mobile-logo-lg.png" />
+            </li>
+
+            <li class="slide-four" data-audio-src="http://jalinburton.com/portfolio/Chocolate-Pen.mp3"
+              data-title="Chocolate Pen"
+              data-description="Pellentesque maximus mi eget arcu cursus, sit amet viverra arcu luctus." data-link="#4">
+              <img src="http://jalinburton.com/portfolio/chocolate-pen-logo-lg.png" />
+            </li>
+
+            <li class="slide-five" data-audio-src="http://jalinburton.com/portfolio/Subway.mp3" data-title="Subway"
+              data-description="Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum condimentum, arcu ut egestas congue."
+              data-link="#5">
+              <img src="http://jalinburton.com/portfolio/subway-logo-lg.png" />
+            </li>
+
+            <li class="slide-six" data-audio-src="http://jalinburton.com/portfolio/Courtesy-Toyota.mp3"
+              data-title="Courtesy Toyota"
+              data-description="Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris id porttitor felis, in vulputate mi. In rhoncus vestibulum nisl ac feugiat."
+              data-link="#6">
+              <img src="http://jalinburton.com/portfolio/toyota-logo-lg.png" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="play">
+      <div class="radio-display">
+        <div class="radio-nav radio-nav-previous">
+          <img src="http://jalinburton.com/portfolio/previous-btn.png" class="img-fluid" />
+        </div>
+
+        <div class="radio-play-btn">
+          <audio class="music" preload="none">
+            <source src="http://jalinburton.com/portfolio/ID-Stronghold.mp3">
+          </audio>
+          <i class="fa fa-play" aria-hidden="true"></i>
+        </div>
+        <div class="radio-nav radio-nav-next">
+          <img src="http://jalinburton.com/portfolio/next-btn.png" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+
+    <div class="info">
+      <div class="radio-slide-content">
+        <div class="active-content">
+          <h3 class="radio-slide-title">Slide Title</h3>
+          <p>Slide description text.</p>
+          <a href="#" class="learn-more">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer" style="font-size: small;">
+      #RAdio<span style="font-weight: bold;">Online</span> Dev by Ony
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/a768aaf192.js"></script>
+  <script src="exp10.js"></script>
+</body>
+
+</html>
