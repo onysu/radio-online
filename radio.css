@@ -217,8 +217,8 @@ body {
   box-shadow: inset 18px 18px 30px -20px rgba(0, 0, 0, 0.8);
   /* margin: 25px auto 0 auto; */
   /* max-width: 550px; */
-  /* position: relative; */
-  /* margin: 0 auto; */
+  position: relative;
+  margin: 0 auto;
 }
 
 .tuner-dial {
