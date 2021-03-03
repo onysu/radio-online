@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
 * {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -9,7 +11,6 @@
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  margin: 0;
 }
 
 /* ------------------------------
@@ -222,10 +223,10 @@ body {
 .tuner-dial {
   background: #ff0000;
   box-shadow: 0px 0px 7px red;
-  height: 55px;
+  height: 46px;
   position: absolute;
   width: 2px;
-  left: 6.5%;
+  /* left: 10%; */
   transition: all 0.4s ease-in-out;
   z-index: 1;
 }
@@ -244,12 +245,12 @@ body {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   list-style: none outside none;
-  /* margin: 10px 20px; */
+  margin: 5px 5px;
   padding: 0;
 }
 
 .radio-clients li {
-  padding: 10px 2px;
+  padding: 10px 0 10px 10px;
 }
 
 .radio-clients li img {
