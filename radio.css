@@ -222,7 +222,7 @@ body {
 .tuner-dial {
   background: #ff0000;
   box-shadow: 0px 0px 7px red;
-  height: 62px;
+  height: 55px;
   position: absolute;
   width: 2px;
   left: 6.5%;
