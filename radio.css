@@ -214,8 +214,8 @@ body {
   border-radius: 8px;
   box-shadow: inset 18px 18px 30px -20px rgba(0, 0, 0, 0.8);
   /* margin: 25px auto 0 auto; */
-  max-width: 550px;
-  position: relative;
+  /* max-width: 550px; */
+  /* position: relative; */
   margin: 0 auto;
 }
 
@@ -244,7 +244,7 @@ body {
   -webkit-justify-content: space-between;
   justify-content: space-between;
   list-style: none outside none;
-  margin: 10px 20px;
+  /* margin: 10px 20px; */
   padding: 0;
 }
 
@@ -299,10 +299,8 @@ body {
   border: 3px solid #adadad;
   border-radius: 8px;
   box-shadow: inset 18px 18px 30px -20px rgba(0, 0, 0, 0.8);
-  padding: 10px 20px;
+  padding: 10px;
   text-align: center;
-  max-width: 550px;
-  /* height: 250px; */
   transition: height 0.2s ease-in-out;
   margin: 0 auto;
 }
