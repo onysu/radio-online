@@ -136,7 +136,7 @@ body {
   padding: 0;
   list-style: none;
   width: 2880px !important;
-  margin-left: -500px !important;
+  margin-left: -565px !important;
 }
 
 .radio-slide-logo li {
@@ -180,11 +180,15 @@ body {
 
 .radio-play-btn {
   color: #b52103;
-  left: 0;
+  /* left: 0; */
   /* margin-top: 65px; */
-  position: absolute;
+  /* position: absolute; */
   font-size: 50px;
-  width: 100%;
+  max-width: 550px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .radio-play-btn i {
@@ -209,9 +213,10 @@ body {
   border: 3px solid #651100;
   border-radius: 8px;
   box-shadow: inset 18px 18px 30px -20px rgba(0, 0, 0, 0.8);
-  margin: 25px auto 0 auto;
-  max-width: 80%;
+  /* margin: 25px auto 0 auto; */
+  max-width: 550px;
   position: relative;
+  margin: 0 auto;
 }
 
 .tuner-dial {
@@ -234,8 +239,8 @@ body {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+  /* -webkit-flex-flow: row wrap; */
+  /* flex-flow: row wrap; */
   -webkit-justify-content: space-between;
   justify-content: space-between;
   list-style: none outside none;
@@ -296,13 +301,14 @@ body {
   box-shadow: inset 18px 18px 30px -20px rgba(0, 0, 0, 0.8);
   padding: 10px 20px;
   text-align: center;
-  width: 75%;
+  max-width: 550px;
   /* height: 250px; */
   transition: height 0.2s ease-in-out;
+  margin: 0 auto;
 }
 
 .radio-slide-title {
-  /* font-size: 18px; */
+  font-size: 18px;
   margin-bottom: 0;
   margin-top: 0;
 }
@@ -310,242 +316,4 @@ body {
 .radio-slide-content p {
   margin-top: 0;
   /* margin-bottom: 5px; */
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
-
-/* ------------------------------
-    1199px
-    ------------------------------ */
-@media screen and (max-width: 1199px) {
-
-  /* Radio Slider */
-  /* .radio-body {
-        max-width: 720px;
-        padding-top: 60px;
-        height: 450px;
-        margin-top: -40px;
-      } */
-
-  /* .radio-screen {
-        max-width: 450px;
-      } */
-
-  /* .radio-slide-logo {
-        height: 140px;
-        max-width: 300px;
-      } */
-
-  .radio-slide-logo li {
-    width: 300px;
-  }
-
-  /* .radio-slide-logo li img {
-        max-width: 220px;
-        max-height: 80px;
-      } */
-
-  /* .play-wrap {
-        margin-top: -55px;
-      } */
-
-  /* .radio-play-btn {
-        margin-top: 40px;
-        font-size: 30px;
-      } */
-
-  .radio-tuner {
-    margin: 15px auto 0 auto;
-  }
-
-  .radio-clients {
-    margin: 5px 10px;
-  }
-
-  .radio-clients li {
-    max-width: 90px;
-    display: flex;
-    align-items: center;
-  }
-
-  .tuner-dial {
-    height: 51px;
-  }
-
-  .radio-display {
-    margin: 0 auto;
-  }
-
-  .radio-nav {
-    max-width: 70px;
-  }
-
-  /* .radio-slide-content {
-    height: 100%;
-  } */
-
-  .radio-slide-title {
-    /* font-size: 22px; */
-    margin-bottom: 5px;
-  }
-
-  /* .active-content p {
-    display: none;
-  } */
-}
-
-/* ------------------------------
-    768px
-    ------------------------------ */
-@media screen and (max-width: 768px) {
-
-  /* Radio Slider */
-  /* .radio-body {
-        background: url("http://jalinburton.com/portfolio/radio-body-sm.png");
-        background-repeat: no-repeat;
-        background-size: 100%;
-        max-width: 450px;
-        padding-top: 60px;
-        height: 510px;
-        margin-top: 0;
-      } */
-
-  /* .radio-screen {
-        max-width: 400px;
-      } */
-
-  /* .radio-slide-logo {
-        height: 135px;
-        max-width: 280px;
-      } */
-
-  .radio-slide-logo li {
-    width: 280px;
-  }
-
-  /* .radio-slide-logo li img {
-        max-width: 200px;
-      } */
-
-  /* .play-wrap {
-        margin-top: -48px;
-      } */
-
-  /* .radio-play-btn {
-        margin-top: 34px;
-      } */
-
-  .radio-clients li {
-    max-width: 50px;
-  }
-
-  .tuner-dial {
-    height: 43px;
-  }
-
-  .radio-display {
-    max-width: 80%;
-    -webkit-justify-content: center;
-    justify-content: center;
-  }
-
-  .radio-slide-content {
-    /* order: -1; */
-    width: 100%;
-    margin: 5px 0;
-  }
-
-  .radio-nav {
-    margin: 5px 20px;
-    max-width: 65px;
-  }
-}
-
-/* ------------------------------
-    640px
-    ------------------------------ */
-@media screen and (max-width: 640px) {
-
-  /* Audio Player */
-  .player-wrap {
-    max-width: 215px;
-  }
-
-  .play-img-wrap {
-    margin-right: 0;
-    border-top-right-radius: 5px;
-  }
-
-  .play-img-wrap img {
-    border-top-right-radius: 5px;
-  }
-
-  .player-description {
-    width: auto;
-    padding: 0 10px 10px;
-  }
-}
-
-/* ------------------------------
-    479px RADIO SLIDER ONLY!!!
-    ------------------------------ */
-@media screen and (max-width: 479px) {
-  /* .radio-slider {
-    padding: 120px 0 20px 0;
-  } */
-
-  /* .radio-body {
-        background: url("http://jalinburton.com/portfolio/radio-body-xs.png");
-        background-size: 100% 100%;
-        max-width: 100%;
-      } */
-
-  .radio-tuner {
-    max-width: 95%;
-  }
-
-  .radio-display {
-    max-width: 95%;
-  }
-}
-
-/* ------------------------------
-    380px RADIO SLIDER ONLY!!!
-    ------------------------------ */
-@media screen and (max-width: 380px) {
-  /* .radio-body {
-        padding-top: 65px;
-      } */
-
-  /* .radio-slide-logo {
-        max-width: 220px;
-      } */
-
-  .radio-slide-logo li {
-    width: 444px;
-  }
-
-  /* .radio-slide-logo li img {
-        max-width: 140px;
-      } */
-
-  /* .play-wrap {
-        align-items: center;
-      } */
-
-  /* .radio-play-btn {
-        font-size: 26px;
-        margin-top: 0;
-        top: 30px;
-      } */
-}
-
-/* ------------------------------
-    340px
-    ------------------------------ */
-/* @media screen and (max-width: 340px) {
-      .radio-play-btn {
-        top: 25px;
-      }
-    } */
