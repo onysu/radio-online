@@ -89,8 +89,8 @@ body {
   height: 150px;
   /*-webkit-justify-content: center;
     justify-content: center;*/
-  margin: 0 auto;
-  max-width: 550px;
+  /* margin: 0 auto; */
+  /* max-width: 550px; */
   /* padding: 20px 30px; */
   padding: 10px;
   /* -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 78%, 50% 100%, 0% 78%, 0 0);
