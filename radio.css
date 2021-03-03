@@ -253,7 +253,7 @@ body {
 }
 
 .radio-clients li img {
-  vertical-align: bottom;
+  vertical-align: middle;
   /* -webkit-filter: contrast(0); */
   /* filter: brightness(0); */
   /* transition: filter 0.6s ease-in-out; */
@@ -286,7 +286,7 @@ body {
 /* Nav */
 .radio-nav {
   cursor: pointer;
-  max-width: 110px;
+  max-width: 50px;
 }
 
 .radio-nav img {
